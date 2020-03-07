@@ -58,11 +58,13 @@ export default class Home extends Component<Props> {
           <Card header={Header} status="success">
             <Text>Etanol:</Text>
             <Input
+              keyboardType={'numeric'}
               value={ethanol.toString()}
               onChangeText={ethanol => handleForm({ethanol})}
             />
             <Text>Gasolina:</Text>
             <Input
+              keyboardType={'numeric'}
               value={gasoline.toString()}
               onChangeText={gasoline => handleForm({gasoline})}
             />
